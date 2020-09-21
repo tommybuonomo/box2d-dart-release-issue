@@ -1,6 +1,6 @@
 import 'package:box2d_flame/box2d.dart';
 import 'package:flame/box2d/box2d_component.dart';
-import 'package:releasemodebug/worm_part_body.dart';
+import 'package:releasemodebug/body/worm_part_body.dart';
 
 class WormBodyGroup {
   List<WormPartBody> bodies = List();

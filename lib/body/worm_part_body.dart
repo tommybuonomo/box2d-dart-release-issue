@@ -1,7 +1,7 @@
 import 'package:box2d_flame/box2d.dart';
 import 'package:flame/box2d/box2d_component.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:releasemodebug/worm_body_group.dart';
+import 'package:releasemodebug/body/worm_body_group.dart';
 
 class WormPartBody extends BodyComponent {
   double width;

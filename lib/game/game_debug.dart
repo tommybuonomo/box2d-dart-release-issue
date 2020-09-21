@@ -5,12 +5,11 @@ import 'package:box2d_flame/box2d.dart';
 import 'package:flame/box2d/box2d_game.dart';
 import 'package:flame/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:releasemodebug/platform_body.dart';
-import 'package:releasemodebug/wall_body.dart';
-import 'package:releasemodebug/worm_body_group.dart';
-import 'package:releasemodebug/worm_part_body.dart';
+import 'package:releasemodebug/body/wall_body.dart';
+import 'package:releasemodebug/body/worm_body_group.dart';
+import 'package:releasemodebug/body/worm_part_body.dart';
 
-import 'background_body.dart';
+import '../body/background_body.dart';
 import 'box2d_world.dart';
 
 class GameDebug extends Box2DGame with TapDetector {
@@ -24,7 +23,6 @@ class GameDebug extends Box2DGame with TapDetector {
 
   Future<void> init() async {
     add(BackgroundBody(box, context));
-    add(PlatformBody(box));
     add(WallBody(box, Side.LEFT));
     add(WallBody(box, Side.RIGHT));
     add(WallBody(box, Side.BOTTOM));

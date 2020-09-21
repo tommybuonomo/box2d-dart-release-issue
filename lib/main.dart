@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'game_debug_page.dart';
+import 'game/game_debug_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
