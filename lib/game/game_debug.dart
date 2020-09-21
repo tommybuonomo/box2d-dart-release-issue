@@ -30,8 +30,8 @@ class GameDebug extends Box2DGame with TapDetector {
 
     async.Timer.periodic(Duration(milliseconds: 500), (timer) {
       var worm = WormBodyGroup(box);
-      var velocityX = Random.secure().nextInt(1000) - 500.0;
-      var velocityY = Random.secure().nextInt(1000) - 500.0;
+      var velocityX = Random.secure().nextInt(30) - 15.0;
+      var velocityY = Random.secure().nextInt(30) - 10.0;
       var velocity = Vector2(velocityX, velocityY);
       worm.bodies.forEach((element) {
         element.body.applyForceToCenter(velocity);
