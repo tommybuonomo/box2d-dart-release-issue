@@ -38,7 +38,7 @@ class GameDebug extends Box2DGame with TapDetector {
         element.body.applyAngularImpulse(2);
       });
 
-      async.Future.delayed(Duration(seconds: 10), () {
+      async.Future.delayed(Duration(seconds: 5), () {
         // If there is no bug, remove the body to free some bodies
         if (worm.bodies.any((element) => !element.bug)) {
           worm.bodies.forEach((b) {

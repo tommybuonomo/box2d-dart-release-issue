@@ -37,9 +37,11 @@ class WormPartBody extends BodyComponent {
     body = world.createBody(bodyDef)..createFixtureFromFixtureDef(fixtureDef);
   }
 
+  var _paint = Paint();
+
   @override
   void renderCircle(Canvas canvas, Offset center, double radius) {
-    final Paint paint = Paint()..color = bug ? Color.fromARGB(255, 0, 0, 0) : Color.fromARGB(255, 255, 255, 255);
-    canvas.drawCircle(center, radius, paint);
+    _paint.color = bug ? Color.fromARGB(255, 0, 0, 0) : Color.fromARGB(255, 255, 255, 255);
+    canvas.drawCircle(center, radius, _paint);
   }
 }
