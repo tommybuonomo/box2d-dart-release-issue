@@ -1,6 +1,8 @@
 # Dart Compiler Release Issue
 
 This package only suppose to generate a bug using flame that happens only in release mode.
+To resume this project, it's a tiny project that used flame with the box2d plugin. It adds one worm in the world every 500ms. I remove the worms after 5 seconds in the world. If a worm have the bug, it will be colored in black, and it will not be removed from the world (to let the bug visible).
+Sometimes it takes 10 seconds for the bug to happen, sometimes 3 minutes, so be patient 😀 
 
 ### Context of the issue
 The initial issue has been declared on the [flame repository](https://github.com/flame-engine/flame/issues/456) during the developement of a game.
